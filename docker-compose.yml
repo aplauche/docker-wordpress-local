@@ -17,6 +17,8 @@ services:
     restart: always
 
   mysql:
+    # Uncomment the below line for m1 macs
+    # platform: linux/x86_64
     image: mysql:5.7
     container_name: ${APP_NAME}-mysql
     volumes:
