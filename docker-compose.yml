@@ -19,7 +19,7 @@ services:
   mysql:
     # Uncomment the below line for m1 macs
     # platform: linux/x86_64
-    image: mysql:5.7
+    image: mysql:8.0
     container_name: ${APP_NAME}-mysql
     volumes:
       - ./db:/var/lib/mysql
