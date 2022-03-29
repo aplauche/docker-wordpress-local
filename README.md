@@ -1,4 +1,29 @@
-# Required setup
+# Quick Start
+
+Use the `.env` file to set up your local website variables including url and database name / credentials.
+
+    cd cli
+
+Run the `add-hosts` script to modify your hosts file and allow for custom domain.
+
+    bash add-hosts.sh
+
+Run the `create-cert` script to create SSL certificates for local https support.
+
+    bash create-cert.sh
+
+Change to main directory and initiate Docker to get up and running!
+
+    cd ..
+    docker-compose up
+
+You should now have access to the local site dashboard and SQL database using the settings you provided in the `.env` file. Enjoy!
+
+------
+
+# Detailed Instructions
+
+## Required setup
 
 In order to use this you will need docker desktop installed and the mkcert utility for creating ssl certificates
 
@@ -10,7 +35,7 @@ if you do not, you can install with homebrew:
 
     brew install mkcert
 
-# Getting Started
+## Getting Started
 
 Use the .env file to define your variables. Here you can set up what you want your local site url to be as well as all the database settings that will be applied to your wp-config.php file.
 
